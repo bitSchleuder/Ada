@@ -1,0 +1,118 @@
+V "GNAT Lib v3.15a"
+P
+R nnvvnnnvnnnnnvvvvvvnnvvnvnnnnnnvnvnnnnnnnnnvnn
+
+U kopiere%b		kopiere.adb		0d5c896c NE PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W bios%s		bios.ads		bios.ali
+W karten%s		karten.adb		karten.ali
+W system.finalization_implementation%s  s-finimp.adb  s-finimp.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.string_ops%s	s-strops.adb		s-strops.ali
+W ustrings%s		ustrings.adb		ustrings.ali
+
+U kopiere%s		kopiere.ads		db93909e EE NE PK
+
+D ada.ads		20020912041901 a0108083
+D a-charac.ads		20020912041841 a61fb5a9
+D a-chlat1.ads		20020912041841 06a18501
+D a-except.ads		20020912041843 a9cbab76
+D a-finali.ads		20020912041844 d4be2e87
+D a-filico.ads		20020912041843 83058640
+D a-ioexce.ads		20020912041844 d52e128a
+D a-stream.ads		20020912041850 90e5c6f7
+D a-string.ads		20020912041850 6440c304
+D a-strmap.ads		20020912041850 e6fc9a3a
+D a-strunb.ads		20020912041851 d5fc5eb1
+D a-tags.ads		20020912041853 bc792b69
+D a-textio.ads		20020912041854 98d7a37c
+D ausgabe.ads		20010113180440 f6712034
+D bios.ads		20010113182154 050d786d
+D drucker.ads		20010107192906 684d3109
+D eingabe.ads		20010113181000 89ee8836
+D interfac.ads		20020912041913 6e859da6
+D i-cstrea.ads		20020912041912 00323eb8
+D karten.ads		20010107155006 91103c3d
+D kopiere.ads		20010113180746 db93909e
+D kopiere.adb		20010113180744 ed224253
+D system.ads		20020912041953 5f7c428f
+D s-exctab.ads		20020912041917 52f2ffc0
+D s-ficobl.ads		20020912041920 14416104
+D s-finimp.ads		20020912041921 ef65ab1e
+D s-finroo.ads		20020912041921 7e5e077b
+D s-parame.ads		20020912041938 e802d143
+D s-secsta.ads		20020912041940 e384df23
+D s-soflin.ads		20020912041941 b5cab736
+D s-stache.ads		20020912041942 8fc58eaa
+D s-stalib.ads		20020912041942 76713122
+D s-stoele.ads		20020912041942 c6bef0ad
+D s-stratt.ads		20020912041942 9fdf8f81
+D s-strops.ads		20020912041943 1d376900
+D s-unstyp.ads		20020912041947 05ad3732
+D text_io.ads		20020912041953 2b576907
+D unchconv.ads		20020912041954 1b7a14c5
+D ustrings.ads		20001225015926 7a0c4140
+D zeilen.ads		20010113181918 11799b63
+X 1 ada.ads
+18K9*Ada 21e8 22|9r6 11r6
+X 9 a-string.ads
+18K13*Strings 32e16 22|9r10 11r10
+X 11 a-strunb.ads
+43K21*Unbounded 383e26 22|9r18 11r18
+48R4*Null_Unbounded_String 22|50r8
+63V13*To_String 22|61r20
+69U14*Append 22|41r19 41r40 50r48 54r3 56r22
+73U14*Append 22|43r3 44r3 57r24 58r10
+X 15 bios.ads
+12K9*BIOS 38e9 22|13r14 16r13
+17U11*LiesDaten 22|24r3 26r29
+23U11*LiesKarte 22|28r20
+26U11*LiesBinaer 22|75r3 77r27
+32U11*DruckeString 22|23r3 61r3 68r3 74r3
+35U11*DruckeKarte 22|26r8
+X 20 karten.ads
+9K9*Karten 28e11 22|13r6 16r5
+11A6*Karte 22|21r6
+15e1*SUB 22|58r20
+20A6*KartenBild 22|47r49 64r38 72r6
+26E6*Ergebnis 22|21r16 72r21
+26n19*daten 22|25r14 76r14
+26n35*binaer 22|25r29 76r29
+26n43*ende 22|28r10
+X 21 kopiere.ads
+9K9*Kopiere 15r5 15e12 22|18b14 81r5 81t12
+11U11*KopiereDaten 22|20b11 30r5 30t17
+13U11*KopiereBinaer 22|71b11 79r5 79t18
+X 22 kopiere.adb
+21a3 s 24m13 26r25 26m39 28m30
+21e13 e 24m16 25r10 25r25 26m42 28r6 28m33
+32V10 HexChar 37r5 37t12 43r13 44r13
+32i18 n 34r6 34r39 35r29
+39U11 AppendHex 45r5 45t14 50r31 52r22
+39R21 s 41m26 41m47 43m10 44m10
+39i40 n 41r6 43r22 44r21
+47U11 HexZeile 62r5 62t13 66r24
+47s20 m 61r16
+47i31 i 50r44 51r12 51r19 55r12 55r19
+47a43 Bild 52r13 55r34
+48i3 l 52m8 52r35 55m29 56r9 57r11 57r48
+48R15 s 50m3 50m41 50m55 52m32 54m10 56m29 57m31 58m17 61r30
+51i7 k 52r18
+55i7 k 55r39
+64U11 DruckeHex 69r5 69t14 77r8
+64s21 s 66r33
+64a32 Bild 66r42
+66i7 i 66r36
+72a3 s 75m14 77r23 77m38
+72e18 e 75m17 76r10 76r25 77m41
+X 39 ustrings.ads
+4K9*Ustrings 22|9r29 11r29 39|47e13
+24R11*Ustring 22|39r31 48r18
+

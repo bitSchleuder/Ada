@@ -1,0 +1,115 @@
+V "GNAT Lib v3.15a"
+P
+R nnvvnnvvnnnnnvvvvvvnnvvnvnnnnvnvnvnnnnnnnnnvnn
+
+U kommando%b		kommando.adb		a0f7ff1a NE PK
+W ada%s			ada.ads			ada.ali
+W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ausgabe%s		ausgabe.adb		ausgabe.ali
+W eingabe%s		eingabe.adb		eingabe.ali
+W karten%s		karten.adb		karten.ali
+W kopiere%s		kopiere.adb		kopiere.ali
+W system%s		system.ads		system.ali
+W system.finalization_implementation%s  s-finimp.adb  s-finimp.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.string_ops_concat_3%s  s-sopco3.adb	s-sopco3.ali
+W ustrings%s		ustrings.adb		ustrings.ali
+W zeilen%s		zeilen.adb		zeilen.ali
+
+U kommando%s		kommando.ads		39df5ed0 EE NE PK
+W karten%s		karten.adb		karten.ali
+
+D ada.ads		20020912041901 a0108083
+D a-calend.ads		20020912041840 83015fd2
+D a-caldel.ads		20020912041840 d5f7cf82
+D a-charac.ads		20020912041841 a61fb5a9
+D a-chlat1.ads		20020912041841 06a18501
+D a-except.ads		20020912041843 a9cbab76
+D a-finali.ads		20020912041844 d4be2e87
+D a-filico.ads		20020912041843 83058640
+D a-ioexce.ads		20020912041844 d52e128a
+D a-stream.ads		20020912041850 90e5c6f7
+D a-string.ads		20020912041850 6440c304
+D a-strfix.ads		20020912041850 2228ddca
+D a-strmap.ads		20020912041850 e6fc9a3a
+D a-strunb.ads		20020912041851 d5fc5eb1
+D a-tags.ads		20020912041853 bc792b69
+D a-textio.ads		20020912041854 98d7a37c
+D ausgabe.ads		20010107192838 f6712034
+D drucker.ads		20010107192906 684d3109
+D eingabe.ads		20001229020228 89ee8836
+D interfac.ads		20020912041913 6e859da6
+D i-cstrea.ads		20020912041912 00323eb8
+D karten.ads		20010107155006 91103c3d
+D kommando.ads		20001229005946 a8cf62ed
+D kommando.adb		20001229172252 a185c00e
+D kopiere.ads		20001227112102 db93909e
+D system.ads		20020912041953 5f7c428f
+D s-exctab.ads		20020912041917 52f2ffc0
+D s-ficobl.ads		20020912041920 14416104
+D s-finimp.ads		20020912041921 ef65ab1e
+D s-finroo.ads		20020912041921 7e5e077b
+D s-parame.ads		20020912041938 e802d143
+D s-secsta.ads		20020912041940 e384df23
+D s-soflin.ads		20020912041941 b5cab736
+D s-stache.ads		20020912041942 8fc58eaa
+D s-stalib.ads		20020912041942 76713122
+D s-stoele.ads		20020912041942 c6bef0ad
+D s-stratt.ads		20020912041942 9fdf8f81
+D s-sopco3.ads		20020912041941 fb5c3964
+D s-unstyp.ads		20020912041947 05ad3732
+D text_io.ads		20020912041953 2b576907
+D unchconv.ads		20020912041954 1b7a14c5
+D ustrings.ads		20001225015926 7a0c4140
+D zeilen.ads		20010107191748 11799b63
+X 1 ada.ads
+18K9*Ada 21e8 24|9r6 9r29 12r6 12r29
+X 11 a-string.ads
+18K13*Strings 32e16 24|9r10 9r33 12r10 12r33
+X 12 a-strfix.ads
+43K21*Fixed 256e22 24|9r41 12r41
+X 14 a-strunb.ads
+43K21*Unbounded 383e26 24|9r18 12r18
+179V13*Index 24|29r10
+X 17 ausgabe.ads
+14K9*Ausgabe 22e12 24|14r31 21r31
+20U11*DruckeKarte 24|33r7 37r7 42r3 47r9
+X 19 eingabe.ads
+12K9*Eingabe 22e12 24|14r14 21r14
+X 22 karten.ads
+9K9*Karten 28e11 23|9r6 10r6 24|14r6 21r6
+11A6*Karte 23|14r40 24|25r46 32r34 36r35 40r40
+13V10*To_String 24|28r19
+16e1*KDO 24|29r19
+X 23 kommando.ads
+12K9*Kommando 17r5 17e13 24|23b14 53r5 53t13
+14U11*AusfuehreKommando 24|40b11 51r5 51t22
+14a29 Befehl 24|40b29 42r35 43r28 43r56 44r28 44r57 45r29 46r31 47r49
+X 24 kommando.adb
+25V10 IstKommando 30r5 30t16 43r9 44r9 45r9 46r9
+25s22 Muster 29r25
+25a38 Befehl 28r29
+26R3 s 28m3 29r16
+32U11 JobKommando 34r5 34t16 43r44
+32a23 Befehl 33r39
+36U11 EndeKommando 38r5 38t17 44r44
+36a24 Befehl 37r39
+X 25 kopiere.ads
+9K9*Kopiere 24|14r40 21r40 45r44 46r44 48r5 25|15e12
+11U11*KopiereDaten 24|45r52 48r13
+13U11*KopiereBinaer 24|46r52
+X 42 ustrings.ads
+4K9*Ustrings 24|9r48 12r48 42|47e13
+24R11*Ustring 24|26r6
+26V12*To_Ustring 24|28r8
+X 43 zeilen.ads
+9K9*Zeilen 24|14r23 21r23 43|18e11
+

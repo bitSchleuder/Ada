@@ -1,0 +1,114 @@
+V "GNAT Lib v3.15a"
+P
+R nnvvnnnvnnnnnvvvvvvnvvnnnnnnnnnnnvnnnnnnnnnvnn
+
+U eingabe%b		eingabe.adb		07e5c213 NE PK
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W hardware%s		hardware.adb		hardware.ali
+W karten%s		karten.adb		karten.ali
+W leser%s		leser.adb		leser.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+
+U eingabe%s		eingabe.ads		18feb40b EE NE PK
+W karten%s		karten.adb		karten.ali
+
+D ada.ads		20020912041901 a0108083
+D a-except.ads		20020912041843 a9cbab76
+D a-finali.ads		20020912041844 d4be2e87
+D a-filico.ads		20020912041843 83058640
+D a-inteio.ads		20020912041844 58c81565
+D a-ioexce.ads		20020912041844 d52e128a
+D a-stream.ads		20020912041850 90e5c6f7
+D a-tags.ads		20020912041853 bc792b69
+D a-textio.ads		20020912041854 98d7a37c
+D a-tiinio.ads		20020912041856 d2c49634
+D eingabe.ads		20010113181000 89ee8836
+D eingabe.adb		20021117140625 f3e21dbe
+D hardware.ads		20010113181254 ad94d7b5
+D interfac.ads		20020912041913 6e859da6
+D i-c.ads		20020912041911 fef7fe28
+D i-cstrea.ads		20020912041912 00323eb8
+D karten.ads		20010107155006 91103c3d
+D leser.ads		20010113181654 81720a0a
+D system.ads		20020912041953 5f7c428f
+D s-exctab.ads		20020912041917 52f2ffc0
+D s-ficobl.ads		20020912041920 14416104
+D s-finimp.ads		20020912041921 ef65ab1e
+D s-finroo.ads		20020912041921 7e5e077b
+D s-osinte.ads		20020912041926 2b7f06cb
+D s-parame.ads		20020912041938 e802d143
+D s-secsta.ads		20020912041940 e384df23
+D s-soflin.ads		20020912041941 b5cab736
+D s-stache.ads		20020912041942 8fc58eaa
+D s-stalib.ads		20020912041942 76713122
+D s-stoele.ads		20020912041942 c6bef0ad
+D s-stratt.ads		20020912041942 9fdf8f81
+D s-tasinf.ads		20020912041944 bbbd2b69
+D s-taspri.ads		20020912041945 47501ad7
+D s-taskin.ads		20020912041945 36912069
+D s-taprob.ads		20020912041944 0962e958
+D s-tpoben.ads		20020912041947 4dc7204d
+D s-tasren.ads		20020912041945 35499295
+D s-tassta.ads		20020912041946 2aa92874
+D s-unstyp.ads		20020912041947 05ad3732
+D unchconv.ads		20020912041954 1b7a14c5
+D unchdeal.ads		20020912041954 8ac9d15e
+D zeilen.ads		20010113181918 11799b63
+X 1 ada.ads
+18K9*Ada 21e8 12|9r6 9r19 11r6 11r19
+X 5 a-inteio.ads
+20K13*Integer_Text_IO 12|9r23 11r23
+X 9 a-textio.ads
+51K13*Text_IO 442e16 12|9r10 11r10
+260U14*Put_Line 12|47r26
+X 11 eingabe.ads
+13K9*Eingabe 23r5 23e12 12|19b14 78r5 78t12
+15U11*LiesDaten 12|50b11 54r5 54t14
+15a21 Ort 12|50b21 52m25
+15e37 Erfolg 12|50b37 52m30
+17U11*TestKarte 12|56b11 61r5 61t14
+17a21 Ort 12|56b21 59m25
+17e37 Erfolg 12|56b37 59m30
+19U11*LiesKarte 12|63b11 68r5 68t14
+19a21 Ort 12|63b21 66m25
+19e37 Erfolg 12|63b37 66m30
+21U11*LiesBinaer 12|70b11 76r5 76t15
+21a22 Ort 12|70b22 73m3
+21e43 Erfolg 12|70b43 73m22 74m24
+X 12 eingabe.adb
+21p1 Puffer 51m17 52r13 57m36 59r13 64m36 66r13 71m36 73r10 74r12
+22b1 bearbeitet 53m3 57r10 60m3 64r10 67m3 71r10 75m3
+24U11 TestEnde 28r5 28t13 45r5 74r3
+24a20 wo 26r6
+24e36 Erfolg 26m26
+30U11 Umcodiere 48r5 48t14 52r3 59r3 66r3
+30a21 von 36r15 45r14
+30a38 nach 38m12 40m24 41m26 42m12
+31e21 Erfolg 33m33 34m8 38m28 42m28 45m19
+32i3 k 36m10 37r23 40r13 41r13 41r51
+35i9 i 36r19 37r11 38r17 40r29 41r31 42r17
+X 13 hardware.ads
+14K9*Hardware 12|13r6 17r6 13|40e13
+16n22*ready 12|33r22
+23e1*CRStatus 12|33r10
+X 17 karten.ads
+9K9*Karten 11|9r6 11r6 12|13r23 17r23 17|28e11
+11A6*Karte 11|15r30 17r30 19r30 12|30r48 50r30 56r30 63r30
+15e1*SUB 12|42r23
+16e1*KDO 12|38r23
+20A6*KartenBild 11|21r31 12|24r24 30r26 35r14 70r31
+21P6*PKartenBild 12|21r13
+23N1*Steuer 12|37r27
+24a1*EndeKarte 12|26r11
+26E6*Ergebnis 11|15r49 17r49 19r49 21r55 12|24r51 31r33 50r49 56r49 63r49
+. 70r55
+26n19*daten 12|34r18
+26n26*spezial 12|38r38
+26n35*binaer 12|42r38 73r32
+26n43*ende 12|26r36 33r43
+X 18 leser.ads
+13K9*Leser 12|13r16 17r16 18|17e10
+15U11*LadeKarte 12|51r7 57r26 64r26 71r26
+

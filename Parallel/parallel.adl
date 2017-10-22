@@ -1,0 +1,4 @@
+gcc -c drucker.adb
+gnatbind -x parallel.ali
+gnatlink parallel.ali
+"make" complete. 

@@ -1,0 +1,99 @@
+
+
+************* Start Simulation ****************
+19.05.2001, 16:14:47
+**************** SystemStart ******************
+1 *** Kommando:  !job anton                                                                                                          
+  *** Neuer Job: !job anton                                                                                                          
+1 *** Kommando:  !compile                                                                                                            
+  *** Befehl unbekannt:  !compile                                                                                                    
+  *** Daten kopieren:                                                                                                                
+  DEFINITION MODULE Eingabe;                                                                                                         
+                                                                                                                                     
+  TYPE Spalte = [0 .. 4095];	(* 2^12 - 1 *)                                                                                          
+       KartenBild = ARRAY [1 .. 80] OF Spalte;                                                                                       
+       Karte = ARRAY [1 .. 80] OF CHAR;                                                                                              
+       Ergebnis = (daten, spezial, binaer, ende);                                                                                    
+                                                                                                                                     
+  PROCEDURE LiesDaten(VAR Ort: Karte; VAR Erfolg: Ergebnis);                                                                         
+                                                                                                                                     
+  PROCEDURE TestKarte(VAR Ort: Karte; VAR Erfolg: Ergebnis);                                                                         
+                                                                                                                                     
+  PROCEDURE LiesKarte(VAR Ort: Karte; VAR Erfolg: Ergebnis);                                                                         
+                                                                                                                                     
+  PROCEDURE LiesBinaer(VAR Ort: KartenBild; VAR Erfolg: Ergebnis);                                                                   
+                                                                                                                                     
+  END Eingabe.                                                                                                                       
+1 *** Kommando:  !copy                                                                                                               
+  *** Daten kopieren:                                                                                                                
+  24                                                                                                                                 
+  35                                                                                                                                 
+  46                                                                                                                                 
+1 *** Kommando:  !binaer                                                                                                             
+  *** Daten binaer kopieren:                                                                                                         
+  00: 20 45 69 6E 67 61 62 65 20 0B A2 59 23 01 01 53     Eingabe  °Y#  S                                                            
+  10: 79 73 74 65 6D 20 65 AF 73 11 01 02 49 6E 4F 75    ystem e°s   InOu                                                            
+  20: 74 20 65 AF 73 11 01 04 48 61 72 64 77 61 72 65    t e°s   Hardware                                                            
+  30: 20 13 0B 5A 23 02 05 4C 61 64 65 4B 61 72 74 65       Z#  LadeKarte                                                            
+  40: 20 02 20 65 20 81 FC 04 01 77 04 B0 20 20 00 00       e °°  w °                                                                
+                                                                                                                                     
+  00: CD C0 55 8B EC 55 2E 8E 1E 20 20 FF 76 08 FF 76    °°U°°U.°   °v °v                                                            
+  10: 06 9A 01 20 04 20 2E 8E 1E 20 20 C4 36 46 01 26     °    .°   °6F &                                                            
+  20: 80 3C 02 74 F6 C4 36 46 01 26 80 3C 03 75 10 B8    °< t°°6F &°< u °                                                            
+  30: 64 20 50 9A 07 20 01 20 2E 8E 1E 20 20 EB 18 C4    d P°    .°   ° °                                                            
+  40: 36 46 01 26 80 3C 04 75 0E B8 65 20 20 00 00 00    6F &°< u °e                                                                 
+                                                                                                                                     
+  00: 50 9A 07 20 01 20 2E 8E 1E 20 20 8B E5 5D CA 04    P°    .°   °°]°                                                             
+  10: 20 03 48 01 04 1C 20 04 3E 20 04 58 20 02 06 55      H     >  X   U                                                            
+  20: 6D 63 6F 64 69 65 72 65 20 67 20 B5 20 81 FC 02    mcodiere g ° °°                                                             
+  30: 01 77 04 B0 20 CD C0 55 8B EC 55 81 C4 FA FF 2E     w ° °°U°°U°°°°.                                                            
+  40: 8E 1E 20 20 C4 36 46 01 26 80 3C 01 74 20 00 00    °   °6F &°< t                                                               
+                                                                                                                                     
+  00: 09 C4 76 06 26 C6 04 03 EB 1A C4 76 0E 26 81 3C     °v &°  ° °v &°<                                                            
+  10: 21 20 75 09 C4 76 06 26 C6 04 01 EB 07 C4 76 06    ! u °v &°  ° °v                                                             
+  20: 26 C6 04 20 C7 46 FC 01 20 81 7E FC 50 20 77 5F    &°  °F°  °~°P w_                                                            
+  30: 81 7E FC 01 20 73 04 B0 01 CD C0 81 7E FC 50 20    °~°  s ° °°°~°P                                                             
+  40: 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00                                                                                
+                                                                                                                                     
+  00: 76 04 B0 01 CD C0 8B 46 FC 2D 01 20 C4 76 20 00    v ° °°°F°-  °v                                                              
+  10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00                                                                                
+  20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00                                                                                
+  30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00                                                                                
+  40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00                                                                                
+                                                                                                                                     
+  00: 03 F0 81 7E FC 01 20 73 04 B0 01 CD C0 81 7E FC     °°~°  s ° °°°~°                                                            
+  10: 50 20 76 04 B0 01 CD C0 8B 46 FC 2D 01 20 D1 E0    P v ° °°°F°-  °°                                                            
+  20: 89 76 F8 8C 46 FA C4 7E 0E 03 F8 26 8A 05 C4 76    °v°°F°°~  °&° °v                                                            
+  30: F8 26 88 04 81 7E FC 50 20 73 05 FF 20 00 00 00    °&° °~°P s °                                                                
+  40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00                                                                                
+                                                                                                                                     
+  00: 46 FC EB A1 8B E5 5D CA 0C 20 02 07 54 65 73 74    F°°°°°]°    Test                                                            
+  10: 45 6E 64 65 20 1C 01 A0 20 81 FC 02 01 77 04 B0    Ende   ° °°  w °                                                            
+  20: 20 CD C0 55 8B EC 55 81 C4 FE FF 2E 8E 1E 20 20     °°U°°U°°°°.°                                                               
+  30: C4 76 06 26 C6 04 03 C7 46 FC 01 20 C4 76 06 26    °v &°  °F°  °v &                                                            
+  40: 80 3C 03 75 0B 81 7E FC 50 20 20 00 00 00 00 00    °< u °~°P                                                                   
+                                                                                                                                     
+  00: 77 04 B0 01 EB 02 B0 20 D0 C8 73 5D 81 7E FC 01    w ° ° ° °°s]°~°                                                             
+  10: 20 73 04 B0 01 CD C0 81 7E FC 50 20 76 04 B0 01     s ° °°°~°P v °                                                             
+  20: CD C0 8B 46 FC 2D 01 20 D1 E0 C4 76 20 00 00 00    °°°F°-  °°°v                                                                
+  30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00                                                                                
+  40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00                                                                                
+                                                                                                                                     
+  00: 03 F0 81 7E FC 01 20 73 04 B0 01 CD C0 81 7E FC     °°~°  s ° °°°~°                                                            
+  10: 50 20 76 04 B0 01 CD 20 00 00 00 00 00 00 00 00    P v ° °                                                                     
+  20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00                                                                                
+  30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00                                                                                
+  40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00                                                                                
+                                                                                                                                     
+1 *** Kommando:  !run                                                                                                                
+  *** Befehl unbekannt:  !run                                                                                                        
+  *** Daten kopieren:                                                                                                                
+  24                                                                                                                                 
+  35                                                                                                                                 
+  46                                                                                                                                 
+1 *** Kommando:  !end                                                                                                                
+  ***  Jobende:  !end                                                                                                                
+***************** ShutDown ********************
+19.05.2001, 16:14:53
+************** End Simulation *****************
+

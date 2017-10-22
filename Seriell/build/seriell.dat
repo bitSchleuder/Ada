@@ -1,0 +1,42 @@
+!job anton
+!compile
+DEFINITION MODULE Eingabe;
+
+TYPE Spalte = [0 .. 4095];	(*2^12 - 1 *)
+     KartenBild = ARRAY [1 .. 80] OF Spalte;
+     Karte = ARRY [1 .. 80] OF CHAR;
+     Ergebnis = (daten, spezial, binaer, ende);
+    
+PROCEDURE LiesDaten(VAR Ort: Karte; VAR Erfolg: Ergebnis);
+
+PROCEDURE LiesKarte(VAR Ort: Karte; VAR Erfolg: Ergebnis);
+
+PROCEDURE LiesKarte(VAR Ort: Karte; VAR Erfolg: Ergebnis);
+
+PROCEDURE LiesBinaer(VAR Ort: KartenBild; VAR Erfolg: Ergebnis);
+
+END Eingabe.
+!copy
+24
+35
+46
+!binaer
+ Eingabe ¢Y#System e¯sInOut e¯sHardware Z#LadeKarte  e üw° 
+ÍÀU‹ìU.  ÿvÿvš  .  Ä6F&€<töÄ6F&€<u¸d Pš  .  ëÄ6F&€<u¸e 
+Pš  .  ‹å]Ê H > X Umcodiere g µ üw° ÍÀU‹ìUÄúÿ.  Ä6F&€<t
+	Äv&ÆëÄv&<! u	Äv&ÆëÄv&Æ ÇFü ~üP w_~ü s°ÍÀ~üP 
+v°ÍÀ‹Fü- Äv
+ğ~ü s°ÍÀ~üP v°ÍÀ‹Fü- Ñà‰vøŒFúÄ~ø&ŠÄvø&ˆ~üP sÿ
+Füë¡‹å]Ê
+ TestEnde   üw° ÍÀU‹ìUÄşÿ.  Äv&ÆÇFü Äv&€<u~üP 
+w°ë° ĞÈs]~ü s°ÍÀ~üP v°ÍÀ‹Fü- ÑàÄv
+ğ~ü s°ÍÀ~üP v°Í
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!run
+24
+35
+46
+!end
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

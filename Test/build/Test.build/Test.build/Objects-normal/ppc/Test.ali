@@ -1,0 +1,52 @@
+V "GNAT Lib v3.15"
+M P W=b
+A -g
+A -O0
+A -Wmost
+A -Wno-four-char-constants
+A -Wno-unknown-pragmas
+A -mdynamic-no-pic
+A -fno-common
+A -fpascal-strings
+A -fmessage-length=0
+A -gnatO
+P
+R nnvnnnnvnnnnnvvvvvvnnvnnnnnnnnnnnvnnnnnnnnnnnnnnvvnn
+
+U test%b		Test.adb		58a7c6d9 NE SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20040116144647 a0108083
+D a-except.ads		20040116144644 a9cbab76
+D a-finali.ads		20040116144644 d4be2e87
+D a-filico.ads		20040116144644 83058640
+D a-ioexce.ads		20040116144645 d52e128a
+D a-stream.ads		20040116144645 dbe6acb4
+D a-tags.ads		20040116144646 bc792b69
+D a-textio.ads		20040116144646 98d7a37c
+D interfac.ads		20040116144650 6e859da6
+D i-cstrea.ads		20040116144649 12f12cf1
+D system.ads		20040116144657 5b48a12b
+D s-exctab.ads		20040116144651 52f2ffc0
+D s-ficobl.ads		20040116144651 14416104
+D s-finimp.ads		20040116144651 ef65ab1e
+D s-finroo.ads		20040116144651 7e5e077b
+D s-parame.ads		20040116144654 315d7d16
+D s-secsta.ads		20040116144654 e384df23
+D s-soflin.ads		20040116144655 14059e84
+D s-stache.ads		20040116144655 8fc58eaa
+D s-stalib.ads		20040116144655 76713122
+D s-stoele.ads		20040116144655 c6bef0ad
+D s-stratt.ads		20040116144655 9fdf8f81
+D s-unstyp.ads		20040116144656 05ad3732
+D Test.adb		20040120201958 c07065a5
+D unchconv.ads		20040116144657 1b7a14c5
+X 1 ada.ads
+17K9*Ada 20e8 24|1r6 7r5
+X 8 a-textio.ads
+50K13*Text_IO 441e16 24|1r10 7r9
+259U14*Put_Line 24|7r17
+X 24 Test.adb
+3U11*Test 8l5 8t9
+

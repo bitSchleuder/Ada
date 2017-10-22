@@ -1,0 +1,53 @@
+V "GNAT Lib v3.15a"
+P
+R nnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnvnnnnnnnnnnnn
+
+U leser%b		leser.adb		d2029f1d PK
+W hardware%s		hardware.adb		hardware.ali  ED
+W karten%s		karten.adb		karten.ali
+
+U leser%s		leser.ads		10623637 EE NE PK
+W karten%s		karten.adb		karten.ali
+
+D hardware.ads		20010107192930 9dca29fe
+D karten.ads		20010107155006 91103c3d
+D leser.ads		20010108151654 81720a0a
+D leser.adb		20010108151640 5faa80d4
+D system.ads		20020912041953 5f7c428f
+D zeilen.ads		20010107191748 11799b63
+X 1 hardware.ads
+15K9*Hardware 29e13 4|9r14 13r14
+17n22*ready 4|70r17 83r19
+18e1*CRStatus 4|70r6 83r8
+21U11*StartCR 4|56r7
+X 2 karten.ads
+9K9*Karten 28e11 3|9r6 10r6 4|9r6 13r6
+20A6*KartenBild 4|22r41
+21P6*PKartenBild 3|14r30 4|39r29 79r30
+X 3 leser.ads
+12K9*Leser 16r5 16e10 4|15b14 101r5 101t10
+14U11*LadeKarte 4|79b11 90r5 90t14
+14p21 ort 4|79b21 89m14
+X 4 leser.adb
+17N1 imin 19r27 21r32 35r25
+18N1 imax 19r20 21r40 26r22 35r10
+19N1 nmax 28r18
+21I9 Index 22r23 26r13 30r29 46r30 54r8
+22A6 Buffer 25r7
+25a1 Ring 42m8 56m15
+26i1 head 42r13 42m35
+26i7 tail 49m11 49r23
+27i1 belegt 43m3 43r13 71m5 71r15 82r6 86r17
+28i1 frei 43m25 43r33 49m29 49r37 72r8
+30U11 advance 37r5 37t12 42r27 49r3
+30i19 i 35r6 35m20 35m36 35r41
+39U11 gibElement 44r5 44t15 89r3
+39p22 y 42m3
+46U11 belegePlatz 50r5 50t16 55r7
+46i23 n 49m18
+52U11 StartLeser 57r5 57t15 72r22 83r30 100r3
+54i1 Platz 55m19 56r20
+59U11 Fehlerbehandlung 61r5 61t21 74r8
+63U11 Dispatcher 65r5 65t15 76r3 85r10
+67U11 KarteDa 77r5 77t12
+

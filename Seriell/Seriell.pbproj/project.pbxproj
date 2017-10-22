@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 38;
+	objects = {
+		014CEA520018CE5811CA2923 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				OPTIMIZATION_CFLAGS = "-O0";
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		014CEA530018CE5811CA2923 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+//010
+//011
+//012
+//013
+//014
+//030
+//031
+//032
+//033
+//034
+		034768E8FF38A79811DB9C8B = {
+			isa = PBXExecutableFileReference;
+			path = Seriell;
+			refType = 3;
+		};
+//030
+//031
+//032
+//033
+//034
+//080
+//081
+//082
+//083
+//084
+		08FB7793FE84155DC02AAC07 = {
+			buildStyles = (
+				014CEA520018CE5811CA2923,
+				014CEA530018CE5811CA2923,
+			);
+			isa = PBXProject;
+			mainGroup = 08FB7794FE84155DC02AAC07;
+			projectDirPath = "";
+			targets = (
+				08FB779FFE84155DC02AAC07,
+			);
+		};
+		08FB7794FE84155DC02AAC07 = {
+			children = (
+				08FB7795FE84155DC02AAC07,
+				F5F128D502FC229001302F5B,
+				C6A0FF2B0290797F04C91782,
+				1AB674ADFE9D54B511CA2CBB,
+			);
+			isa = PBXGroup;
+			name = Seriell;
+			refType = 4;
+		};
+		08FB7795FE84155DC02AAC07 = {
+			children = (
+				F64472770387B855015B2226,
+				F64472860387B855015B2226,
+				F644727B0387B855015B2226,
+				F64472710387B855015B2226,
+				F64472790387B855015B2226,
+				F64472730387B855015B2226,
+				F644727D0387B855015B2226,
+				F64472750387B855015B2226,
+				F644726E0387B855015B2226,
+				F644726F0387B855015B2226,
+				F64472840387B855015B2226,
+				F64472760387B855015B2226,
+				F64472850387B855015B2226,
+				F644727A0387B855015B2226,
+				F64472700387B855015B2226,
+				F64472780387B855015B2226,
+				F64472720387B855015B2226,
+				F644727C0387B855015B2226,
+				F64472740387B855015B2226,
+				F644726D0387B855015B2226,
+				F64472830387B855015B2226,
+				F644727F0387B855015B2226,
+				F644727E0387B855015B2226,
+			);
+			isa = PBXGroup;
+			name = Source;
+			refType = 4;
+		};
+		08FB779FFE84155DC02AAC07 = {
+			buildPhases = (
+				08FB77A0FE84155DC02AAC07,
+				08FB77A1FE84155DC02AAC07,
+				F5F128DD02FC231701302F5B,
+				08FB77A3FE84155DC02AAC07,
+				08FB77A5FE84155DC02AAC07,
+				C6A0FF2D029079AD04C91782,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = /usr/lib/ada;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "b~$PRODUCT_NAME.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Seriell;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXToolTarget;
+			name = Seriell;
+			productName = Seriell;
+			productReference = 034768E8FF38A79811DB9C8B;
+			shouldUseHeadermap = 1;
+		};
+		08FB77A0FE84155DC02AAC07 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08FB77A1FE84155DC02AAC07 = {
+			buildActionMask = 2147483647;
+			files = (
+				F64472CC0387BE5D015B2226,
+				F64472CD0387BE5D015B2226,
+				F64472CE0387BE5E015B2226,
+				F64472CF0387BE5E015B2226,
+				F64472D00387BE5F015B2226,
+				F64472D10387BE60015B2226,
+				F64472D20387BE60015B2226,
+				F64472D30387BE60015B2226,
+				F64472D40387BE61015B2226,
+				F64472D50387BE62015B2226,
+				F64472D60387BE96015B2226,
+				F64472D70387BEBF015B2226,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08FB77A3FE84155DC02AAC07 = {
+			buildActionMask = 2147483647;
+			files = (
+				F5F128DB02FC22FA01302F5B,
+				F5F128DC02FC22FA01302F5B,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08FB77A5FE84155DC02AAC07 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+//080
+//081
+//082
+//083
+//084
+//1A0
+//1A1
+//1A2
+//1A3
+//1A4
+		1AB674ADFE9D54B511CA2CBB = {
+			children = (
+				034768E8FF38A79811DB9C8B,
+				F64472DF0387CF5F015B2226,
+				F64472E10387D0D5015B2226,
+				F6812EDA0387D51901E39260,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+		};
+//1A0
+//1A1
+//1A2
+//1A3
+//1A4
+//C60
+//C61
+//C62
+//C63
+//C64
+		C6A0FF2B0290797F04C91782 = {
+			children = (
+				C6A0FF2C0290799A04C91782,
+			);
+			isa = PBXGroup;
+			name = Documentation;
+			refType = 4;
+		};
+		C6A0FF2C0290799A04C91782 = {
+			isa = PBXFileReference;
+			path = Seriell.1;
+			refType = 4;
+		};
+		C6A0FF2D029079AD04C91782 = {
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				C6A0FF2E029079C004C91782,
+				F64472D80387BF06015B2226,
+			);
+			isa = PBXCopyFilesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C6A0FF2E029079C004C91782 = {
+			fileRef = C6A0FF2C0290799A04C91782;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//C60
+//C61
+//C62
+//C63
+//C64
+//F50
+//F51
+//F52
+//F53
+//F54
+		F5F128D502FC229001302F5B = {
+			children = (
+				F5F128D902FC22FA01302F5B,
+				F5F128DA02FC22FA01302F5B,
+			);
+			isa = PBXGroup;
+			name = Libraries;
+			refType = 4;
+		};
+		F5F128D902FC22FA01302F5B = {
+			isa = PBXFileReference;
+			name = libgnarl.a;
+			path = /usr/lib/gcc/darwin/3.1/adalib/libgnarl.a;
+			refType = 0;
+		};
+		F5F128DA02FC22FA01302F5B = {
+			isa = PBXFileReference;
+			name = libgnat.a;
+			path = /usr/lib/gcc/darwin/3.1/adalib/libgnat.a;
+			refType = 0;
+		};
+		F5F128DB02FC22FA01302F5B = {
+			fileRef = F5F128D902FC22FA01302F5B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F128DC02FC22FA01302F5B = {
+			fileRef = F5F128DA02FC22FA01302F5B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5F128DD02FC231701302F5B = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			generatedFileNames = (
+			);
+			isa = PBXShellScriptBuildPhase;
+			neededFileNames = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /usr/local/bin/build_ada;
+		};
+//F50
+//F51
+//F52
+//F53
+//F54
+//F60
+//F61
+//F62
+//F63
+//F64
+		F644726D0387B855015B2226 = {
+			isa = PBXFileReference;
+			path = ausgabe.adb;
+			refType = 4;
+		};
+		F644726E0387B855015B2226 = {
+			isa = PBXFileReference;
+			path = ausgabe.ads;
+			refType = 4;
+		};
+		F644726F0387B855015B2226 = {
+			isa = PBXFileReference;
+			path = bios.ads;
+			refType = 4;
+		};
+		F64472700387B855015B2226 = {
+			isa = PBXFileReference;
+			path = drucker.adb;
+			refType = 4;
+		};
+		F64472710387B855015B2226 = {
+			isa = PBXFileReference;
+			path = drucker.ads;
+			refType = 4;
+		};
+		F64472720387B855015B2226 = {
+			isa = PBXFileReference;
+			path = eingabe.adb;
+			refType = 4;
+		};
+		F64472730387B855015B2226 = {
+			isa = PBXFileReference;
+			path = eingabe.ads;
+			refType = 4;
+		};
+		F64472740387B855015B2226 = {
+			isa = PBXFileReference;
+			path = hardware.adb;
+			refType = 4;
+		};
+		F64472750387B855015B2226 = {
+			isa = PBXFileReference;
+			path = hardware.ads;
+			refType = 4;
+		};
+		F64472760387B855015B2226 = {
+			isa = PBXFileReference;
+			path = karten.adb;
+			refType = 4;
+		};
+		F64472770387B855015B2226 = {
+			isa = PBXFileReference;
+			path = karten.ads;
+			refType = 4;
+		};
+		F64472780387B855015B2226 = {
+			isa = PBXFileReference;
+			path = kommando.adb;
+			refType = 4;
+		};
+		F64472790387B855015B2226 = {
+			isa = PBXFileReference;
+			path = kommando.ads;
+			refType = 4;
+		};
+		F644727A0387B855015B2226 = {
+			isa = PBXFileReference;
+			path = kopiere.adb;
+			refType = 4;
+		};
+		F644727B0387B855015B2226 = {
+			isa = PBXFileReference;
+			path = kopiere.ads;
+			refType = 4;
+		};
+		F644727C0387B855015B2226 = {
+			isa = PBXFileReference;
+			path = leser.adb;
+			refType = 4;
+		};
+		F644727D0387B855015B2226 = {
+			isa = PBXFileReference;
+			path = leser.ads;
+			refType = 4;
+		};
+		F644727E0387B855015B2226 = {
+			isa = PBXFileReference;
+			path = make.cmd;
+			refType = 4;
+		};
+		F644727F0387B855015B2226 = {
+			isa = PBXFileReference;
+			path = seriell.adb;
+			refType = 4;
+		};
+		F64472830387B855015B2226 = {
+			isa = PBXFileReference;
+			path = ustrings.adb;
+			refType = 4;
+		};
+		F64472840387B855015B2226 = {
+			isa = PBXFileReference;
+			path = ustrings.ads;
+			refType = 4;
+		};
+		F64472850387B855015B2226 = {
+			isa = PBXFileReference;
+			path = zeilen.adb;
+			refType = 4;
+		};
+		F64472860387B855015B2226 = {
+			isa = PBXFileReference;
+			path = zeilen.ads;
+			refType = 4;
+		};
+		F64472CC0387BE5D015B2226 = {
+			fileRef = F64472850387B855015B2226;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F64472CD0387BE5D015B2226 = {
+			fileRef = F644727A0387B855015B2226;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F64472CE0387BE5E015B2226 = {
+			fileRef = F64472700387B855015B2226;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F64472CF0387BE5E015B2226 = {
+			fileRef = F64472720387B855015B2226;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F64472D00387BE5F015B2226 = {
+			fileRef = F64472780387B855015B2226;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F64472D10387BE60015B2226 = {
+			fileRef = F644727C0387B855015B2226;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F64472D20387BE60015B2226 = {
+			fileRef = F64472740387B855015B2226;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F64472D30387BE60015B2226 = {
+			fileRef = F644726D0387B855015B2226;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F64472D40387BE61015B2226 = {
+			fileRef = F64472830387B855015B2226;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F64472D50387BE62015B2226 = {
+			fileRef = F644727F0387B855015B2226;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F64472D60387BE96015B2226 = {
+			fileRef = F64472760387B855015B2226;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F64472D70387BEBF015B2226 = {
+			fileRef = F644726F0387B855015B2226;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F64472D80387BF06015B2226 = {
+			fileRef = 034768E8FF38A79811DB9C8B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F64472DF0387CF5F015B2226 = {
+			isa = PBXFileReference;
+			name = seriell.out;
+			path = build/seriell.out;
+			refType = 4;
+		};
+		F64472E10387D0D5015B2226 = {
+			isa = PBXFileReference;
+			path = seriell.txt;
+			refType = 4;
+		};
+		F6812EDA0387D51901E39260 = {
+			isa = PBXFileReference;
+			name = seriell.dat;
+			path = build/seriell.dat;
+			refType = 4;
+		};
+	};
+	rootObject = 08FB7793FE84155DC02AAC07;
+}

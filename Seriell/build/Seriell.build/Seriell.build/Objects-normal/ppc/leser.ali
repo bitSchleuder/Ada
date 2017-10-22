@@ -1,0 +1,62 @@
+V "GNAT Lib v3.15a"
+P
+R nnvvnnnvnnnnnvvvvnvnvvnnnnnnnnnnnvnnnnnnnnnvnn
+
+U leser%b		leser.adb		4451c52b PK
+W hardware%s		hardware.adb		hardware.ali
+W karten%s		karten.adb		karten.ali
+
+U leser%s		leser.ads		10623637 EE NE PK
+W karten%s		karten.adb		karten.ali
+
+D ada.ads		20020912041901 a0108083
+D a-except.ads		20020912041843 a9cbab76
+D a-finali.ads		20020912041844 d4be2e87
+D a-filico.ads		20020912041843 83058640
+D a-stream.ads		20020912041850 90e5c6f7
+D a-tags.ads		20020912041853 bc792b69
+D hardware.ads		20010113181254 ad94d7b5
+D interfac.ads		20020912041913 6e859da6
+D i-c.ads		20020912041911 fef7fe28
+D karten.ads		20010107155006 91103c3d
+D leser.ads		20010113181654 81720a0a
+D leser.adb		20010113181656 f9a724a9
+D system.ads		20020912041953 5f7c428f
+D s-exctab.ads		20020912041917 52f2ffc0
+D s-finimp.ads		20020912041921 ef65ab1e
+D s-finroo.ads		20020912041921 7e5e077b
+D s-osinte.ads		20020912041926 2b7f06cb
+D s-parame.ads		20020912041938 e802d143
+D s-secsta.ads		20020912041940 e384df23
+D s-soflin.ads		20020912041941 b5cab736
+D s-stache.ads		20020912041942 8fc58eaa
+D s-stalib.ads		20020912041942 76713122
+D s-stoele.ads		20020912041942 c6bef0ad
+D s-stratt.ads		20020912041942 9fdf8f81
+D s-tasinf.ads		20020912041944 bbbd2b69
+D s-taspri.ads		20020912041945 47501ad7
+D s-taskin.ads		20020912041945 36912069
+D s-taprob.ads		20020912041944 0962e958
+D s-tpoben.ads		20020912041947 4dc7204d
+D s-tasren.ads		20020912041945 35499295
+D s-tassta.ads		20020912041946 2aa92874
+D s-unstyp.ads		20020912041947 05ad3732
+D unchconv.ads		20020912041954 1b7a14c5
+D unchdeal.ads		20020912041954 8ac9d15e
+D zeilen.ads		20010113181918 11799b63
+X 7 hardware.ads
+14K9*Hardware 40e13 12|9r14 12r14
+16n29*busy 12|21r32
+23e1*CRStatus 12|21r20
+25U11*StartCR 12|20r5
+X 10 karten.ads
+9K9*Karten 28e11 11|9r6 11r6 12|9r6 12r6
+20A6*KartenBild 12|16r15
+21P6*PKartenBild 11|15r30 12|18r30
+X 11 leser.ads
+13K9*Leser 17r5 17e10 12|14b14 26r5 26t10
+15U11*LadeKarte 12|18b11 24r5 24t14
+15p21 ort 12|18b21 23m5
+X 12 leser.adb
+16a1 Bild 20m13 23m12
+

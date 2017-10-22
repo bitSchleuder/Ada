@@ -1,0 +1,62 @@
+V "GNAT Lib v3.15a"
+P
+R nnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnvnnnnnnnnnnnn
+
+U bios%s		bios.ads		fafb7731 EE PK IU
+W ausgabe%s		ausgabe.adb		ausgabe.ali
+W eingabe%s		eingabe.adb		eingabe.ali
+W karten%s		karten.adb		karten.ali
+W zeilen%s		zeilen.adb		zeilen.ali
+
+D ausgabe.ads		20010113180440 f6712034
+D bios.ads		20010113182154 050d786d
+D drucker.ads		20010107192906 684d3109
+D eingabe.ads		20010113181000 89ee8836
+D karten.ads		20010107155006 91103c3d
+D system.ads		20020912041953 5f7c428f
+D zeilen.ads		20010113181918 11799b63
+X 1 ausgabe.ads
+14K9*Ausgabe 22e12 2|9r31 30r17 33r17 36r17
+16U11*DruckeZeile 2|30r25
+18U11*DruckeString 2|33r25
+20U11*DruckeKarte 2|36r25
+X 2 bios.ads
+12K9*BIOS 38r5 38e9
+14N1*Steuer
+15a1*EndeKarte
+17U11*LiesDaten
+17a21 Ort
+17e37 Erfolg
+20U11*TestKarte
+20a21 Ort
+20e37 Erfolg
+23U11*LiesKarte
+23a21 Ort
+23e37 Erfolg
+26U11*LiesBinaer
+26a22 Ort
+26e43 Erfolg
+29U11*DruckeZeile
+29a23 ort
+32U11*DruckeString
+32s24 s
+35U11*DruckeKarte
+35s23 s
+35a34 k
+X 4 eingabe.ads
+13K9*Eingabe 2|9r14 18r17 21r17 24r17 27r17 4|23e12
+15U11*LiesDaten 2|18r25
+17U11*TestKarte 2|21r25
+19U11*LiesKarte 2|24r25
+21U11*LiesBinaer 2|27r25
+X 5 karten.ads
+9K9*Karten 2|9r6 10r6 14r25 15r36 5|28e11
+11A6*Karte 2|17r30 20r30 23r30 35r37
+20A6*KartenBild 2|15r22 26r31
+23N1*Steuer 2|14r32
+24a1*EndeKarte 2|15r43
+26E6*Ergebnis 2|17r49 20r49 23r49 26r55
+X 7 zeilen.ads
+9K9*Zeilen 2|9r23 10r14 7|16e11
+11A6*ZeilenBild 2|29r31
+

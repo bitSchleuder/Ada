@@ -1,0 +1,109 @@
+V "GNAT Lib v3.15a"
+P
+R nnvvnnvvnnnnnvvvvvvnnvvnvnnnnvnvnvnnnnnnnnnvnn
+
+U kommando%b		kommando.adb		7aef7653 NE PK
+W ada%s			ada.ads			ada.ali
+W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W bios%s		bios.ads		bios.ali
+W kopiere%s		kopiere.adb		kopiere.ali
+W system%s		system.ads		system.ali
+W system.finalization_implementation%s  s-finimp.adb  s-finimp.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.string_ops_concat_3%s  s-sopco3.adb	s-sopco3.ali
+W ustrings%s		ustrings.adb		ustrings.ali
+
+U kommando%s		kommando.ads		39df5ed0 EE NE PK
+W karten%s		karten.adb		karten.ali
+
+D ada.ads		20020912041901 a0108083
+D a-calend.ads		20020912041840 83015fd2
+D a-caldel.ads		20020912041840 d5f7cf82
+D a-charac.ads		20020912041841 a61fb5a9
+D a-chlat1.ads		20020912041841 06a18501
+D a-except.ads		20020912041843 a9cbab76
+D a-finali.ads		20020912041844 d4be2e87
+D a-filico.ads		20020912041843 83058640
+D a-ioexce.ads		20020912041844 d52e128a
+D a-stream.ads		20020912041850 90e5c6f7
+D a-string.ads		20020912041850 6440c304
+D a-strfix.ads		20020912041850 2228ddca
+D a-strmap.ads		20020912041850 e6fc9a3a
+D a-strunb.ads		20020912041851 d5fc5eb1
+D a-tags.ads		20020912041853 bc792b69
+D a-textio.ads		20020912041854 98d7a37c
+D ausgabe.ads		20010113180440 f6712034
+D bios.ads		20010113182154 050d786d
+D drucker.ads		20010107192906 684d3109
+D eingabe.ads		20010113181000 89ee8836
+D interfac.ads		20020912041913 6e859da6
+D i-cstrea.ads		20020912041912 00323eb8
+D karten.ads		20010107155006 91103c3d
+D kommando.ads		20010113180534 a8cf62ed
+D kommando.adb		20010113181448 81663e76
+D kopiere.ads		20010113180746 db93909e
+D system.ads		20020912041953 5f7c428f
+D s-exctab.ads		20020912041917 52f2ffc0
+D s-ficobl.ads		20020912041920 14416104
+D s-finimp.ads		20020912041921 ef65ab1e
+D s-finroo.ads		20020912041921 7e5e077b
+D s-parame.ads		20020912041938 e802d143
+D s-secsta.ads		20020912041940 e384df23
+D s-soflin.ads		20020912041941 b5cab736
+D s-stache.ads		20020912041942 8fc58eaa
+D s-stalib.ads		20020912041942 76713122
+D s-stoele.ads		20020912041942 c6bef0ad
+D s-stratt.ads		20020912041942 9fdf8f81
+D s-sopco3.ads		20020912041941 fb5c3964
+D s-unstyp.ads		20020912041947 05ad3732
+D text_io.ads		20020912041953 2b576907
+D unchconv.ads		20020912041954 1b7a14c5
+D ustrings.ads		20001225015926 7a0c4140
+D zeilen.ads		20010113181918 11799b63
+X 1 ada.ads
+18K9*Ada 21e8 25|9r6 9r29 12r6 12r29
+X 11 a-string.ads
+18K13*Strings 32e16 25|9r10 9r33 12r10 12r33
+X 12 a-strfix.ads
+43K21*Fixed 256e22 25|9r41 12r41
+X 14 a-strunb.ads
+43K21*Unbounded 383e26 25|9r18 12r18
+179V13*Index 25|27r10
+X 18 bios.ads
+12K9*BIOS 38e9 25|14r6 19r6
+35U11*DruckeKarte 25|31r7 35r7 40r3 45r9
+X 23 karten.ads
+9K9*Karten 28e11 24|9r6 10r6
+11A6*Karte 24|14r40 25|23r46 30r34 34r35 38r40
+13V10*To_String 25|26r19
+16e1*KDO 25|27r19
+X 24 kommando.ads
+12K9*Kommando 16r5 16e13 25|21b14 51r5 51t13
+14U11*AusfuehreKommando 25|38b11 49r5 49t22
+14a29 Befehl 25|38b29 40r35 41r28 41r56 42r28 42r57 43r29 44r31 45r49
+X 25 kommando.adb
+23V10 IstKommando 28r5 28t16 41r9 42r9 43r9 44r9
+23s22 Muster 27r25
+23a38 Befehl 26r29
+24R3 s 26m3 27r16
+30U11 JobKommando 32r5 32t16 41r44
+30a23 Befehl 31r39
+34U11 EndeKommando 36r5 36t17 42r44
+34a24 Befehl 35r39
+X 26 kopiere.ads
+9K9*Kopiere 25|14r12 19r12 43r44 44r44 46r5 26|15e12
+11U11*KopiereDaten 25|43r52 46r13
+13U11*KopiereBinaer 25|44r52
+X 43 ustrings.ads
+4K9*Ustrings 25|9r48 12r48 43|47e13
+24R11*Ustring 25|24r6
+26V12*To_Ustring 25|26r8
+

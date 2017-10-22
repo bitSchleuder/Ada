@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 38;
+	objects = {
+		F6D14BBC0387DB9E0196F250 = {
+			children = (
+				F6D14C2D0387DD000196F250,
+				F6D14BC80387DC160196F250,
+				F6D14C320387DDB10196F250,
+			);
+			isa = PBXGroup;
+			refType = 4;
+		};
+		F6D14BBE0387DB9E0196F250 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		F6D14BBF0387DB9E0196F250 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+		F6D14BC00387DB9E0196F250 = {
+			buildStyles = (
+				F6D14BBE0387DB9E0196F250,
+				F6D14BBF0387DB9E0196F250,
+			);
+			isa = PBXProject;
+			mainGroup = F6D14BBC0387DB9E0196F250;
+			productRefGroup = F6D14BC80387DC160196F250;
+			projectDirPath = "";
+			targets = (
+				F6D14BC60387DC160196F250,
+			);
+		};
+		F6D14BC10387DC160196F250 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D14BC20387DC160196F250 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D14BC30387DC160196F250 = {
+			buildActionMask = 2147483647;
+			files = (
+				F6D14C160387DCDD0196F250,
+				F6D14C180387DCDD0196F250,
+				F6D14C1A0387DCDD0196F250,
+				F6D14C1C0387DCDD0196F250,
+				F6D14C1E0387DCDD0196F250,
+				F6D14C200387DCDD0196F250,
+				F6D14C220387DCDD0196F250,
+				F6D14C240387DCDD0196F250,
+				F6D14C260387DCDD0196F250,
+				F6D14C280387DCDD0196F250,
+				F6D14C2A0387DCDD0196F250,
+				F6D14C330387DE560196F250,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D14BC40387DC160196F250 = {
+			buildActionMask = 2147483647;
+			files = (
+				F6D14C300387DDA90196F250,
+				F6D14C310387DDA90196F250,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D14BC50387DC160196F250 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D14BC60387DC160196F250 = {
+			buildPhases = (
+				F6D14BC10387DC160196F250,
+				F6D14BC20387DC160196F250,
+				F6D14BC30387DC160196F250,
+				F6D14BC40387DC160196F250,
+				F6D14BC50387DC160196F250,
+			);
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = /usr/lib/gcc/darwin/3.1/adalib;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Parallel;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+			);
+			isa = PBXApplicationTarget;
+			name = Parallel;
+			productInstallPath = "$(USER_APPS_DIR)";
+			productName = Parallel;
+			productReference = F6D14BC70387DC160196F250;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string></string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string></string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string></string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.0.1d1</string>
+</dict>
+</plist>
+";
+			shouldUseHeadermap = 0;
+		};
+		F6D14BC70387DC160196F250 = {
+			isa = PBXApplicationReference;
+			path = Parallel.app;
+			refType = 3;
+		};
+		F6D14BC80387DC160196F250 = {
+			children = (
+				F6D14BC70387DC160196F250,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+		};
+		F6D14BFA0387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = ausgabe.adb;
+			refType = 4;
+		};
+		F6D14BFB0387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = ausgabe.ads;
+			refType = 4;
+		};
+		F6D14BFC0387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = "bs3-5a.tex";
+			refType = 4;
+		};
+		F6D14BFD0387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = drucker.adb;
+			refType = 4;
+		};
+		F6D14BFE0387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = drucker.ads;
+			refType = 4;
+		};
+		F6D14BFF0387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = eingabe.adb;
+			refType = 4;
+		};
+		F6D14C000387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = eingabe.ads;
+			refType = 4;
+		};
+		F6D14C010387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = hardware.adb;
+			refType = 4;
+		};
+		F6D14C020387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = hardware.ads;
+			refType = 4;
+		};
+		F6D14C030387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = karten.adb;
+			refType = 4;
+		};
+		F6D14C040387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = karten.ads;
+			refType = 4;
+		};
+		F6D14C050387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = kommando.adb;
+			refType = 4;
+		};
+		F6D14C060387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = kommando.ads;
+			refType = 4;
+		};
+		F6D14C070387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = kopiere.adb;
+			refType = 4;
+		};
+		F6D14C080387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = kopiere.ads;
+			refType = 4;
+		};
+		F6D14C090387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = leser.adb;
+			refType = 4;
+		};
+		F6D14C0A0387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = leser.ads;
+			refType = 4;
+		};
+		F6D14C0B0387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = parallel.adb;
+			refType = 4;
+		};
+		F6D14C0C0387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = parallel.adl;
+			refType = 4;
+		};
+		F6D14C0D0387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = ladekarte.adb;
+			refType = 4;
+		};
+		F6D14C0E0387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = readme.txt;
+			refType = 4;
+		};
+		F6D14C0F0387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = ustrings.adb;
+			refType = 4;
+		};
+		F6D14C100387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = ustrings.ads;
+			refType = 4;
+		};
+		F6D14C110387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = zeilen.adb;
+			refType = 4;
+		};
+		F6D14C120387DCDD0196F250 = {
+			isa = PBXFileReference;
+			path = zeilen.ads;
+			refType = 4;
+		};
+		F6D14C160387DCDD0196F250 = {
+			fileRef = F6D14BFD0387DCDD0196F250;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F6D14C180387DCDD0196F250 = {
+			fileRef = F6D14BFF0387DCDD0196F250;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F6D14C1A0387DCDD0196F250 = {
+			fileRef = F6D14C010387DCDD0196F250;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F6D14C1C0387DCDD0196F250 = {
+			fileRef = F6D14C030387DCDD0196F250;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F6D14C1E0387DCDD0196F250 = {
+			fileRef = F6D14C050387DCDD0196F250;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F6D14C200387DCDD0196F250 = {
+			fileRef = F6D14C070387DCDD0196F250;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F6D14C220387DCDD0196F250 = {
+			fileRef = F6D14C090387DCDD0196F250;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F6D14C240387DCDD0196F250 = {
+			fileRef = F6D14C0B0387DCDD0196F250;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F6D14C260387DCDD0196F250 = {
+			fileRef = F6D14C0D0387DCDD0196F250;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F6D14C280387DCDD0196F250 = {
+			fileRef = F6D14C0F0387DCDD0196F250;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F6D14C2A0387DCDD0196F250 = {
+			fileRef = F6D14C110387DCDD0196F250;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F6D14C2D0387DD000196F250 = {
+			children = (
+				F6D14BFA0387DCDD0196F250,
+				F6D14BFB0387DCDD0196F250,
+				F6D14C340387DF190196F250,
+				F6D14BFD0387DCDD0196F250,
+				F6D14BFE0387DCDD0196F250,
+				F6D14BFF0387DCDD0196F250,
+				F6D14C000387DCDD0196F250,
+				F6D14C010387DCDD0196F250,
+				F6D14C020387DCDD0196F250,
+				F6D14C030387DCDD0196F250,
+				F6D14C040387DCDD0196F250,
+				F6D14C050387DCDD0196F250,
+				F6D14C060387DCDD0196F250,
+				F6D14C070387DCDD0196F250,
+				F6D14C080387DCDD0196F250,
+				F6D14C090387DCDD0196F250,
+				F6D14C0A0387DCDD0196F250,
+				F6D14C0B0387DCDD0196F250,
+				F6D14C0D0387DCDD0196F250,
+				F6D14C0F0387DCDD0196F250,
+				F6D14C100387DCDD0196F250,
+				F6D14C110387DCDD0196F250,
+				F6D14C120387DCDD0196F250,
+			);
+			isa = PBXGroup;
+			name = Source;
+			refType = 4;
+		};
+		F6D14C2E0387DDA90196F250 = {
+			isa = PBXFileReference;
+			name = libgnarl.a;
+			path = /usr/lib/gcc/darwin/3.1/adalib/libgnarl.a;
+			refType = 0;
+		};
+		F6D14C2F0387DDA90196F250 = {
+			isa = PBXFileReference;
+			name = libgnat.a;
+			path = /usr/lib/gcc/darwin/3.1/adalib/libgnat.a;
+			refType = 0;
+		};
+		F6D14C300387DDA90196F250 = {
+			fileRef = F6D14C2E0387DDA90196F250;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F6D14C310387DDA90196F250 = {
+			fileRef = F6D14C2F0387DDA90196F250;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F6D14C320387DDB10196F250 = {
+			children = (
+				F6D14C2E0387DDA90196F250,
+				F6D14C2F0387DDA90196F250,
+			);
+			isa = PBXGroup;
+			name = Libraries;
+			refType = 4;
+		};
+		F6D14C330387DE560196F250 = {
+			fileRef = F6D14BFA0387DCDD0196F250;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F6D14C340387DF190196F250 = {
+			children = (
+				F6D14BFC0387DCDD0196F250,
+				F6D14C0C0387DCDD0196F250,
+				F6D14C0E0387DCDD0196F250,
+			);
+			isa = PBXGroup;
+			name = Addons;
+			refType = 4;
+		};
+	};
+	rootObject = F6D14BC00387DB9E0196F250;
+}

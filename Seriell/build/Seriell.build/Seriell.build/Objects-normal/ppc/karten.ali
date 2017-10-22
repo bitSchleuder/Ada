@@ -1,0 +1,35 @@
+V "GNAT Lib v3.15a"
+P
+R nnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnvnnnnnnnnnnnn
+
+U karten%b		karten.adb		b5d41ac5 NE PK
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U karten%s		karten.ads		91103c3d EE PK
+
+D karten.ads		20010107155006 91103c3d
+D karten.adb		20001229024742 24c426f8
+D system.ads		20020912041953 5f7c428f
+D s-secsta.ads		20020912041940 e384df23
+D s-stoele.ads		20020912041942 c6bef0ad
+X 1 karten.ads
+9K9*Karten 28r5 28e11 2|9b14 19r5 19t11
+11A6*Karte 13r23 2|11r23 12r14 14r12
+13V10*To_String 2|11b10 17r5 17t14
+13a20 k 2|11b20 14r37
+15e1*SUB
+16e1*KDO 23r35
+18I9*Spalte 20r39
+20A6*KartenBild 21r32 24r13
+21P6*PKartenBild
+23N1*Steuer 24r38
+24a1*EndeKarte
+26E6*Ergebnis
+26n19*daten
+26n26*spezial
+26n35*binaer
+26n43*ende
+X 2 karten.adb
+12a3 s 14m29 16r10
+14i7 i 14r31 14r39
+

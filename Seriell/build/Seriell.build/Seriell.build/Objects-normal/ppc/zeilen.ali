@@ -1,0 +1,24 @@
+V "GNAT Lib v3.15a"
+P
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnn
+
+U zeilen%b		zeilen.adb		9bd69f1e NE PK
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U zeilen%s		zeilen.ads		11799b63 EE NE PK
+
+D system.ads		20020912041953 5f7c428f
+D s-secsta.ads		20020912041940 e384df23
+D s-stoele.ads		20020912041942 c6bef0ad
+D zeilen.ads		20010113181918 11799b63
+D zeilen.adb		20010113181914 8aaf047d
+X 4 zeilen.ads
+9K9*Zeilen 16r5 16e11 5|9b14 19r5 19t11
+11A6*ZeilenBild 12r32 14r25 5|11r25 14r12
+12P6*PZeilenBild
+14V10*To_String 5|11b10 17r5 17t14
+14a20 ort 5|11b20 14r44
+X 5 zeilen.adb
+12a3 s 14m34 16r10
+14i7 i 14r36 14r48
+

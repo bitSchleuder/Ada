@@ -1,0 +1,175 @@
+V "GNAT Lib v3.15a"
+P
+R nnvvnvvvnnnnnvvvvvvnvvvnvnnnnnnvvvnnnnnnnnnvnn
+
+U hardware%b		hardware.adb		578505b5 PK
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W karten%s		karten.adb		karten.ali
+W system.finalization_implementation%s  s-finimp.adb  s-finimp.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W ustrings%s		ustrings.adb		ustrings.ali  ED
+W zeilen%s		zeilen.adb		zeilen.ali  ED
+
+U hardware%s		hardware.ads		2dfd70eb EE PK
+W karten%s		karten.adb		karten.ali
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+W zeilen%s		zeilen.adb		zeilen.ali  ED
+
+D ada.ads		20020912041901 a0108083
+D a-calend.ads		20020912041840 83015fd2
+D a-charac.ads		20020912041841 a61fb5a9
+D a-chlat1.ads		20020912041841 06a18501
+D a-except.ads		20020912041843 a9cbab76
+D a-finali.ads		20020912041844 d4be2e87
+D a-filico.ads		20020912041843 83058640
+D a-inteio.ads		20020912041844 58c81565
+D a-ioexce.ads		20020912041844 d52e128a
+D a-stream.ads		20020912041850 90e5c6f7
+D a-string.ads		20020912041850 6440c304
+D a-strmap.ads		20020912041850 e6fc9a3a
+D a-strunb.ads		20020912041851 d5fc5eb1
+D a-tags.ads		20020912041853 bc792b69
+D a-textio.ads		20020912041854 98d7a37c
+D a-tiinio.ads		20020912041856 d2c49634
+D hardware.ads		20010113181254 ad94d7b5
+D hardware.adb		20010113172852 96968364
+D interfac.ads		20020912041913 6e859da6
+D i-c.ads		20020912041911 fef7fe28
+D i-cstrea.ads		20020912041912 00323eb8
+D karten.ads		20010107155006 91103c3d
+D system.ads		20020912041953 5f7c428f
+D s-exctab.ads		20020912041917 52f2ffc0
+D s-ficobl.ads		20020912041920 14416104
+D s-finimp.ads		20020912041921 ef65ab1e
+D s-finroo.ads		20020912041921 7e5e077b
+D s-osinte.ads		20020912041926 2b7f06cb
+D s-parame.ads		20020912041938 e802d143
+D s-secsta.ads		20020912041940 e384df23
+D s-soflin.ads		20020912041941 b5cab736
+D s-stache.ads		20020912041942 8fc58eaa
+D s-stalib.ads		20020912041942 76713122
+D s-stoele.ads		20020912041942 c6bef0ad
+D s-stratt.ads		20020912041942 9fdf8f81
+D s-tasinf.ads		20020912041944 bbbd2b69
+D s-taspri.ads		20020912041945 47501ad7
+D s-taskin.ads		20020912041945 36912069
+D s-taprob.ads		20020912041944 0962e958
+D s-tpoben.ads		20020912041947 4dc7204d
+D s-tasren.ads		20020912041945 35499295
+D s-tassta.ads		20020912041946 2aa92874
+D s-unstyp.ads		20020912041947 05ad3732
+D text_io.ads		20020912041953 2b576907
+D unchconv.ads		20020912041954 1b7a14c5
+D unchdeal.ads		20020912041954 8ac9d15e
+D ustrings.ads		20001225015926 7a0c4140
+D zeilen.ads		20010113181918 11799b63
+X 1 ada.ads
+18K9*Ada 21e8 18|9r6 9r19 9r40 13r6 13r19 13r40 15r6 16r6
+X 2 a-calend.ads
+40K13*Calendar 119e17 18|15r10 16r10
+48I12*Year_Number 18|73r5
+49I12*Month_Number 18|72r5
+50I12*Day_Number 18|71r5
+52O12*Day_Duration 18|74r5
+54V13*Clock 18|83r9
+61U14*Split 18|83r3
+X 8 a-inteio.ads
+20K13*Integer_Text_IO 18|9r23 13r23
+X 11 a-string.ads
+18K13*Strings 32e16 18|9r44 13r44
+X 13 a-strunb.ads
+43K21*Unbounded 383e26 18|9r52 13r52
+50V13*Length 18|41r39
+73U14*Append 18|41r18
+99V13*Element 18|44r50
+X 15 a-textio.ads
+51K13*Text_IO 442e16 18|9r10 13r10
+54P9*File_Type 18|70r18
+55n23*In_File 18|92r16
+55n42*Append_File 18|95r17
+95U14*Open 18|92r3 95r3
+101U14*Close 18|108r29
+116U14*Set_Input 18|93r3
+117U14*Set_Output 18|96r3 109r3
+121V13*Standard_Output 18|109r14
+145U14*Flush 18|108r13
+169U14*New_Line 18|61r30 86r58 108r3
+187V13*End_Of_File 18|46r8
+211U14*Put 18|115r3
+245U14*Put 18|61r9 78r22 85r13 85r33 85r55 86r14 86r36
+260U14*Put_Line 18|91r3 98r3 100r3 105r3 107r3 110r3 112r3 119r3
+X 16 a-tiinio.ads
+69U14*Put 18|78r40 85r43
+X 17 hardware.ads
+14K9*Hardware 40r5 40e13 18|23b14 121r5 121t13
+16E6*Status 23r11 32r11
+16n17*off 23r21 32r21 18|36r20 64r21
+16n22*ready 18|47r22 62r21 94r15 97r15
+16n29*busy 18|33r23 59r22
+16n35*empty 18|46r37
+16n42*error
+18t6*CR 21r5 21e7 25r45 18|25b11 50r5 50t7 113r3
+19Y9 Start 25r48 18|31b15 34r12 34t17
+19p15 wohin 18|32r18
+20Y9 Stop 18|35b15 113r6
+23e1*CRStatus 18|33m11 36m8 46m25 47m10 94m3
+25U11*StartCR
+25p19 Ort
+27t6*LP 30r5 30e7 34r47 18|52b11 68r5 68t7 114r3
+28Y9 Start 34r50 18|57b14 60r11 60t16
+28a15 woher 18|58r17
+29Y9 Stop 18|63b15 114r6
+32e1*LPStatus 18|59m10 62m9 64m9 97m3
+34U11*StartLP
+34a19 Ort
+36U11*SystemStart 18|89b11 101r5 101t16
+38U11*ShutDown 18|103b11 116r5 116t13
+X 18 hardware.adb
+26p3 Ort 32m11 39m36 44m26
+27R3 s 41m14 41m25 41r46 44r58
+27i15 l 41m34 42r8 42m33 44r19
+31p21 wohin
+39i9 i 39r40
+44i9 i 44r30 44r60
+53a3 Ort 58m10 61r23
+57a20 woher
+70P1 Reader 92m8 93r13
+70P9 Printer 95m8 96r14 108r19 108m35
+71i1 dd 83m24 85r8
+72i1 mm 83m20 85r28
+73i1 yy 83m16 85r47
+74o1 ww 83m28 83r48
+75i1 sss 83m33 84r10 84m20 84r27 84r49 84r65
+75i6 hrs 84m3 86r8
+75i11 mins 84m41 86r29
+75i17 secs 84m57 86r51
+77U11 Put2 79r5 79t9 85r3 85r23 86r3 86r24 86r46
+77i16 n 78r10 78r44
+81U11 PutDate 87r5 87t12 99r3 106r3 111r3 120r3
+X 22 karten.ads
+9K9*Karten 17|9r6 12r6 18|18r6 21r6 22|28e11
+20A6*KartenBild 18|27r30 39r14 42r12 42r38
+21P6*PKartenBild 17|19r22 25r24 18|26r8 31r28
+X 47 ustrings.ads
+4K9*Ustrings 18|9r63 13r63 47|47e13
+24R11*Ustring 18|27r6
+39U13*Get_Line 18|41r5
+X 48 zeilen.ads
+9K9*Zeilen 17|9r14 12r14 18|18r14 21r14 48|16e11
+11A6*ZeilenBild 17|28r22 34r27 18|53r8 57r27
+14V10*To_String 18|61r13
+

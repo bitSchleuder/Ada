@@ -1,0 +1,205 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BS3.TEX - 3.Abschnitt der Vorlesung Betriebssysteme 
+% Unterabschnitt 3.5
+% Stand 20.05.2000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\typeout {Realisierung des "uberlappten Stapelbetriebes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection {Realisierung des "uberlappten Stapelbetriebes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Durch die neugewonnene Interruptf"ahigkeit 
+k"onnen wir uns bei unserem Stapelsystem 
+von der rein sequentiellen Arbeitsweise befreien 
+und sind nun in der Lage, 
+den effizienteren "uberlappenden Betrieb durchzuf"uhren.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Um die "Uberlappung auszunutzen, 
+holen wir die Kartenbilder bei der Eingabe 
+nicht direkt vom Kartenleser ab, 
+sondern aus einem Pufferbereich,
+der parallel dazu nachgef"ullt wird. 
+Auf der Ausgabeseite verfahren wir ebenso;
+wir legen die produzierten Ausgabezeilen 
+in einen Druckpuffer ab und erwarten, 
+da"s sie dann parallel zur weiteren Verarbeitung
+ausgedruckt werden. 
+Intern mu"s dann daf"ur gesorgt werden, da"s sich
+Eingabezweig, Ausgabezweig und Verarbeitungszweig
+so weit synchronisieren,
+da"s die Pufferbereiche weder unter- noch "uberlaufen;
+der Verarbeitungszweig soll aber davon nichts merken m"ussen.
+
+Wir beschreiben im Folgenden nur die Eingabeseite;
+der Ausgabezweig geht ganz analog.
+
+Als Eingabepuffer verwenden wir im Beispiel einen Ringpuffer
+beliebiger aber fester L"ange (wir k"onnen hier noch nicht
+die Existenz einer dynamischen Speicherverwaltung voraussetzen).
+Die Realisierung ist typisch, 
+aber vielleicht etwas sorgsamer als "ublich;
+Systemprogramme sind schwer zu testen und 
+sollten daher im Prinzip verifizierbar sein.
+Die Zugriffsroutinen d"urfen nur aufgerufen werden,
+wenn ihre angegebenen Vorbedingungen erf"ullt sind.
+Zu beachten ist, da"s ein Pufferelement,
+w"ahrend es gerade gef"ullt wird,
+weder als belegt noch als frei gez"ahlt wird.
+
+\begin{verbatim}
+
+IMPLEMENTATION MODULE KartenTreiber;
+
+FROM Hardware IMPORT Status, StartCR, CRStatus;
+
+CONST 
+  imin =  1;              (* minimaler Pufferindex *)
+  imax = 10;              (* maximaler Pufferindex *)
+  nmax = imax - imin + 1; (* maximale Elementzahl *)
+
+TYPE
+  anzahl = [0 .. nmax];
+  index  = [imin .. imax];
+  buffer = ARRAY index OF KartenBild;
+
+VAR
+  Ring: buffer;
+  head, tail: index;
+  belegt, frei: anzahl;
+
+\end{verbatim}
+
+\begin{verbatim}
+PROCEDURE advance(VAR i: index);   
+(* weiterzaehlen im Ring *)
+(* PRE  imin <= i  <= imax *)
+(* POST imin <= i' <= imax *)
+BEGIN IF i = imax THEN i := imin
+      ELSE i := i + 1 END;
+END advance;
+
+PROCEDURE gibElement(VAR y: KartenBild);
+(* PRE belegt > 0 *)
+BEGIN y := Ring[head];
+      advance(head);
+      belegt := belegt - 1;
+      frei := frei + 1;
+END gibElement;
+
+PROCEDURE belegePlatz(VAR n: index);
+(* PRE frei > 0 *)
+BEGIN advance(tail); n := tail;
+      frei := frei - 1;
+END belegePlatz;
+
+PROCEDURE StartLeser;
+(* PRE frei > 0 *)
+VAR Platz: index;
+BEGIN belegePlatz(Platz);
+      StartCR(Ring[Platz]);
+END StartLeser;
+
+\end{verbatim}
+
+\begin{verbatim}
+PROCEDURE KarteDa; 
+(* dies ist der Kern der Interruptroutine *)
+BEGIN IF CRStatus = ready THEN 
+      (* Transport erfolgreich *)
+        belegt := belegt + 1;
+        IF frei > 0 THEN StartLeser;
+        END;
+      ELSE Fehlerbehandlung;
+      END;
+      Dispatcher;
+END KarteDa;
+
+\end{verbatim}
+
+F"ur den Fall eines erfolgreichen Transports wird also das Lesen der
+n"achsten Karte angesto"sen, au"ser wenn der Puffer voll ist; dann
+bleibt der Leser stehen und mu"s sp"ater wieder gestartet werden,
+wenn wieder hinreichend Platz ist. Im Falle einer Fehler-R"uckmeldung
+mu"s der Operateur verst"andigt werden und eingreifen, damit der
+Transport wiederholt werden kann.
+
+Die hier angesprochene Routine {\tt Dispatcher} k"onnte daf"ur sorgen,
+da"s an Stelle des unterbrochenen Benutzerprogramms ein anderes
+wom"oglich wichtigeres anschlie"send fortgesetzt wird
+(preemptive multitasking); sie k"onnte auch im Rahmen der
+Interrupt-Behandlung stehen. Lokal hat sie keine Auswirkung.
+
+\begin{verbatim}
+
+PROCEDURE LadeKarte(VAR Ort: KartenBild);
+(* erste Fassung, zu verbessern! *)
+BEGIN IF belegt = 0 THEN (* Puffer leer *)
+        IF CRStatus = ready THEN StartLeser (* Leser steht *)
+        END;
+        REPEAT Dispatcher;
+        UNTIL belegt > 0;
+      END;
+      gibElement(Ort);
+END LadeKarte;
+
+BEGIN (*Initialisierung *)
+  head := imax; tail := imax;
+  belegt := 0; frei := nmax;
+  StartLeser;
+END KartenTreiber.
+
+\end{verbatim}
+
+Hier wird die Routine {\tt Dispatcher} deshalb angesprochen,
+um an Stelle eines dynamischen Wartens eventuell zwischenzeitlich
+ein anderes Benutzerprogramm zu bedienen
+(cooperative multitasking).
+
+Die angegebene L"osung ist leider noch fehlerhaft:
+sowohl die Routine {\tt LadeKarte} wie auch die Interruptroutine
+greifen auf dieselben Daten zu, und wann die Interruptroutine
+aufgerufen wird, ist nicht vorhersehbar; es kann also zu b"osen
+Synchronisationsfehlern kommen.
+Um dies zu verhindern, k"onnte man daran denken,
+beim Betreten von {\tt LadeKarte} das Aufrufen der Interruptroutine 
+durch einen geeigneten Mechanismus zu sperren 
+und es beim Verlassen wieder zuzulassen.
+Das gen"ugt allerdings nicht; auch innerhalb der {\tt REPEAT}-Schleife
+mu"s die Sperre jeweils gel"ost und sp"ater
+wieder gesetzt werden, denn die Bedingung zum Verlassen der Schleife
+kann nur durch die Interruptroutine selbst hergestellt werden.
+So ergibt sich die verbesserte Version:
+
+\begin{verbatim}
+
+PROCEDURE LadeKarte(VAR Ort: KartenBild);
+(* zweite Fassung mit Sperre *)
+BEGIN Sperre;
+      IF belegt = 0 THEN (* Puffer leer *)
+        IF CRStatus = ready THEN StartLeser (* Leser steht *)
+        END;
+        REPEAT Freigabe; Dispatcher; Sperre;
+        UNTIL belegt > 0;
+      END;
+      gibElement(Ort);
+      Freigabe;
+END LadeKarte;
+
+\end{verbatim}
+
+Den Aufruf der Interruptroutine k"onnen wir durch Sperren des
+zugeh"origen Interrupts verhindern, falls unser Prozessor daf"ur
+und f"ur die anschlie"sende Freigabe einen entsprechenden
+Maschinenbefehl zur Verf"ugung stellt.
+
+Wir haben damit hier lokal unser Synchronisationsproblem gel"ost;
+f"ur den allgemeineren Fall, da"s ein Programmst"uck 
+bzw. seine Daten gegen Zugriff durch beliebige parallel ablaufende
+Aktivit"aten, auch ggf. auf anderen Prozessoren, zu sch"utzen sind,
+werden wir sp"ater allgemeinere Mechanismen kennenlernen.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\endinput
+

@@ -1,0 +1,50 @@
+V "GNAT Lib v3.15a"
+M P W=b
+P
+R nnvnnnnnnnnnnvvvnnnnnvnnnnnnnnnnnvnnnnnnnnnnnn
+
+U parallel%b		parallel.adb		f48e682f NE SU
+W eingabe%s		eingabe.adb		eingabe.ali
+W hardware%s		hardware.adb		hardware.ali
+W karten%s		karten.adb		karten.ali
+W kommando%s		kommando.adb		kommando.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+
+D ada.ads		20020912041901 a0108083
+D a-except.ads		20020912041843 a9cbab76
+D eingabe.ads		20001229020228 89ee8836
+D hardware.ads		20010107192930 9dca29fe
+D karten.ads		20010107155006 91103c3d
+D kommando.ads		20001229005946 a8cf62ed
+D parallel.adb		20001229014826 d9759737
+D system.ads		20020912041953 5f7c428f
+D s-soflin.ads		20020912041941 b5cab736
+D s-stache.ads		20020912041942 8fc58eaa
+D s-stalib.ads		20020912041942 76713122
+D s-stoele.ads		20020912041942 c6bef0ad
+D unchconv.ads		20020912041954 1b7a14c5
+D zeilen.ads		20010107191748 11799b63
+X 3 eingabe.ads
+12K9*Eingabe 22e12 7|9r24 12r13
+18U11*LiesKarte 7|20r8
+X 4 hardware.ads
+15K9*Hardware 29e13 7|9r6 32r5 36r5 37r26
+25U11*SystemStart 7|32r14
+27U11*ShutDown 7|36r14 37r35
+X 5 karten.ads
+9K9*Karten 28e11 7|9r16 12r5
+11A6*Karte 7|17r16
+26E6*Ergebnis 7|16r39 18r14 29r12
+26n26*spezial 7|21r28 23r18
+26n43*ende 7|21r53 34r29
+X 6 kommando.ads
+12K9*Kommando 17e13 7|9r33 24r10
+14U11*AusfuehreKommando 7|24r19
+X 7 parallel.adb
+14U11*Parallel 38r5 38t13
+16U11 Interpretiere 27r5 27t18 33r10
+16e25 Resultat 26m3
+17a3 SteuerKarte 20m18 24r37
+18e3 KartenArt 20m31 21r16 21r41 23r6 26r15
+29e1 JobStatus 33m24 34r17
+

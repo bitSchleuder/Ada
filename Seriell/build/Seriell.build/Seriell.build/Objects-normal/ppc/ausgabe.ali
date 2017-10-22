@@ -1,0 +1,78 @@
+V "GNAT Lib v3.15a"
+P
+R nnvvnnnvnnnnnvvvvnvnvvnnnnnnnnnnnvnnnnnnnnnvnn
+
+U ausgabe%b		ausgabe.adb		cb322e3b NE PK
+W drucker%s		drucker.adb		drucker.ali
+W hardware%s		hardware.adb		hardware.ali
+W karten%s		karten.adb		karten.ali
+W zeilen%s		zeilen.adb		zeilen.ali
+
+U ausgabe%s		ausgabe.ads		1e55b663 EE NE PK
+W drucker%s		drucker.adb		drucker.ali
+W karten%s		karten.adb		karten.ali
+W zeilen%s		zeilen.adb		zeilen.ali
+
+D ada.ads		20020912041901 a0108083
+D a-except.ads		20020912041843 a9cbab76
+D a-finali.ads		20020912041844 d4be2e87
+D a-filico.ads		20020912041843 83058640
+D a-stream.ads		20020912041850 90e5c6f7
+D a-tags.ads		20020912041853 bc792b69
+D ausgabe.ads		20010113180440 f6712034
+D ausgabe.adb		20010113180436 78f34fed
+D drucker.ads		20010107192906 684d3109
+D hardware.ads		20010113181254 ad94d7b5
+D interfac.ads		20020912041913 6e859da6
+D i-c.ads		20020912041911 fef7fe28
+D karten.ads		20010107155006 91103c3d
+D system.ads		20020912041953 5f7c428f
+D s-exctab.ads		20020912041917 52f2ffc0
+D s-finimp.ads		20020912041921 ef65ab1e
+D s-finroo.ads		20020912041921 7e5e077b
+D s-osinte.ads		20020912041926 2b7f06cb
+D s-parame.ads		20020912041938 e802d143
+D s-secsta.ads		20020912041940 e384df23
+D s-soflin.ads		20020912041941 b5cab736
+D s-stache.ads		20020912041942 8fc58eaa
+D s-stalib.ads		20020912041942 76713122
+D s-stoele.ads		20020912041942 c6bef0ad
+D s-stratt.ads		20020912041942 9fdf8f81
+D s-tasinf.ads		20020912041944 bbbd2b69
+D s-taspri.ads		20020912041945 47501ad7
+D s-taskin.ads		20020912041945 36912069
+D s-taprob.ads		20020912041944 0962e958
+D s-tpoben.ads		20020912041947 4dc7204d
+D s-tasren.ads		20020912041945 35499295
+D s-tassta.ads		20020912041946 2aa92874
+D s-unstyp.ads		20020912041947 05ad3732
+D unchconv.ads		20020912041954 1b7a14c5
+D unchdeal.ads		20020912041954 8ac9d15e
+D zeilen.ads		20010113181918 11799b63
+X 7 ausgabe.ads
+14K9*Ausgabe 22r5 22e12 8|15b14 39r5 39t12
+16U11*DruckeZeile 8|17b11 19r5 19t16 26r3 36r3
+16a23 ort 8|17b23 18r27
+18U11*DruckeString 8|21b11 27r5 27t17
+18s24 s 8|21b24 24r12 24r31 24r43
+20U11*DruckeKarte 8|29b11 37r5 37t16
+20s23 s 8|29b23 32r12 32r31 32r43 34r31
+20a34 k 8|29b34 34r48
+X 8 ausgabe.adb
+22a3 z 24m25 26r15
+24i7 i 24r27 24r45
+30a3 z 32m25 34m29 36r15
+32i7 i 32r27 32r45
+34i7 i 34r42 34r50
+X 9 drucker.ads
+13K9*Drucker 7|9r22 8|9r32 18r7 9|17e12
+15U11*DruckeZeile 8|18r15
+X 10 hardware.ads
+14K9*Hardware 8|9r6 13r6 10|40e13
+X 13 karten.ads
+9K9*Karten 7|9r6 12r6 8|9r16 13r16 13|28e11
+11A6*Karte 7|20r37 8|29r37 34r12
+X 36 zeilen.ads
+9K9*Zeilen 7|9r14 12r14 8|9r24 13r24 36|16e11
+11A6*ZeilenBild 7|16r31 8|17r31 22r6 30r6
+
